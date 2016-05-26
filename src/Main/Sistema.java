@@ -49,27 +49,30 @@ private static void login(){
 
     if( logado instanceof Cliente){
         do {
-            System.out.println("Escolha uma opçao");
+            System.out.println("Escolha uma opcao");
             System.out.println("1 - Rental Cars");
             System.out.println("2 - Sales Cars");
-            System.out.println("3 - Cars Manutençao");
+            System.out.println("3 - Cars Manutenutencao");
             System.out.println("4 - Sair");
             op = reader.nextInt();
 
             switch (op){
                 case 1:
                     System.out.println("Rental Cars");
-                    System.out.println("Serviço indisponivel no momento");
+                    RentalCars.run(banco) ;
+                    //System.out.println("Servicoo indisponivel no momento");
                     break;
                 case 2:
-                    System.out.println("Serviço indisponivel no momento");
+                    System.out.println("Bem vindo a SalesCars");
+                    //SalesCars.runFunc(banco, funcionario)
+                    SalesCars.runClient(banco, (Cliente)logado);                    
                     break;
                 case 3:
-                    System.out.println("Serviço indisponivel no momento");
+                    System.out.println("Servico indisponivel no momento");
                     break;
                 case 4: break;
                 default:
-                    System.out.println("Opçao invalida");
+                    System.out.println("Opcao invalida");
             }
         } while (op != 4);
     }
@@ -85,9 +88,10 @@ private static void login(){
                 break;
             case 2:
                 System.out.println("Main.Sistema de Sales Cars offline");
+                SalesCars.runFunc(banco, (Funcionario)logado);
                 break;
             case 3:
-                System.out.println("Main.Sistema de Cars Manutençao offline");
+                System.out.println("Main.Sistema de Cars Manuten��ao offline");
                 break;
         }
     }

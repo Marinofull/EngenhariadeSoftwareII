@@ -13,17 +13,17 @@ public class RentalCars {
 
         do {
             System.out.println("Voce esta logado no modulo Rental Cars");
-            System.out.println("Escolha uma opçao");
+            System.out.println("Escolha uma op��ao");
             System.out.println("1 - Cadastrar Veiculos");//feito
-            System.out.println("2 - Visualizar Veiculos");//feito + ediçao, falta delecao
+            System.out.println("2 - Visualizar Veiculos");//feito + edi��ao, falta delecao
             System.out.println("3 - Cadastrar Postos");
             System.out.println("4 - Visualizar Postos");
             System.out.println("5 - Visualizar Feedbacks");
             System.out.println("6 - Visualizar Agendamentos");
-            System.out.println("7 - Realizar Checkin de Locaçao");
-            System.out.println("8 - Realizar Checkout de Locaçao");
+            System.out.println("7 - Realizar Checkin de Loca��ao");
+            System.out.println("8 - Realizar Checkout de Loca��ao");
             System.out.println("9 - Cadastrar Planos de Quilometragem");
-            System.out.println("10 - Visualizar Historio de Aluguel");
+            System.out.println("10 - Visualizar Historico de Aluguel");
             System.out.println("11 - Sair");
             op = reader.nextByte();
 
@@ -43,7 +43,7 @@ public class RentalCars {
                 case 11:
                     break;
                 default:
-                    System.out.println("Serviço indisponivel no momento");
+                    System.out.println("Servi��o indisponivel no momento");
                     break;
             }
         } while (op != 11);
@@ -156,7 +156,7 @@ public class RentalCars {
             case 1:
                 System.out.println("Digite o novo valor para Nome");
                 nameB = reader.nextLine();//esta pedindo duaz vezes pq esta vindo algum lixo
-                // no buffer e faz o primeiro recever "", nao encontrei na documentaçao como limpar, antes de ler
+                // no buffer e faz o primeiro recever "", nao encontrei na documenta��ao como limpar, antes de ler
                 //e curiosamente so da esse bug com string
                 nameB = reader.nextLine();
                 obj.setName(nameB);

@@ -28,12 +28,17 @@ public Banco() {
     this.pessoas.add(new Funcionario(3, "Romilson", "romilson@brasilcars.com", "tesourasemponta123", 2));
     this.pessoas.add(new Cliente(4, "Jonh Doe", "iammyown@grandfather.com", "grandfatherparadox"));
     this.pessoas.add(new Cliente(5, "Acerto", "mizeravi@qtensino.com", "apredeascontaponcotom"));
-    this.lastInsertPessoa=5;
+    this.pessoas.add(new Cliente(6, "fagner", "b@hotmail.com", "123456"));
+    this.lastInsertPessoa=6;
     this.automoveis.add(new Automovel(1, "Fiat Uno", "Casual", (byte) 2, 2015, "S"));
     this.automoveis.add(new Automovel(2, "Camaro", "Esportivo", (byte) 2, 2015, "S"));
     this.lastInsertAutomovel=2;
     this.postos.add(new Posto(1, "Unidade Central", "Ondina", "24 horas"));
     this.lastInsertPosto=1;
+    this.lastInsertFeedback=0;
+    this.lastInsertLocacao=0;
+    this.lastInsertPlanoLocacao=0;
+    this.lastInsertVenda=0;
 }
 
 public ArrayList<Pessoa> getPessoas() {

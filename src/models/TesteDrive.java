@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 import database.Banco;
 
-public class Feedback {
+public class TesteDrive {
 private int id;
 private String text;
 private int who;
 
-public Feedback (int id, String text, int who){
+public TesteDrive (int id, String text, int who){
     this.id = id;
     this.text = text;
     this.who = who;
